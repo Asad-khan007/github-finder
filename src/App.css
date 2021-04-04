@@ -62,3 +62,25 @@
     ". . . ."
     ". . . .";
 }
+
+.searchBar input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.btn-search {
+  background-color: #f35247;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #f1f1f1;
+  box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+  margin-bottom: 20px;
+}
+
+.btn-search:focus {
+  outline: none;
+}
