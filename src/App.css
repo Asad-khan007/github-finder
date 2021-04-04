@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: rgb(224, 119, 101);
+  padding: 15px 0 15px 25px;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.container {
+  /* display: flex; */
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin: 10px 10px 10px 10px;
+}
+
+.userItem {
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  width: 20%;
+  display: inline-block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  margin: 10px;
+  font-family: sans-serif;
+  background-color: #f1f1f1;
+  align-items: center;
+}
+
+.card a {
+  background-color: #f44336;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 4px 4px 20px 0px rgba(50, 50, 50, 0.5);
+  padding: 14px 25px;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.userCss {
+  display: "grid";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . .";
+}
