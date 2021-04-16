@@ -13,8 +13,8 @@ const Navbar = props => {
                 {props.title}
                 </h2>
                 <ul>
-                  <li> <Link to="/">Home</Link></li>
-                    <li><Link to="/about"  >About</Link></li>
+                  <li> <Link to="/" className='btn'>Home</Link></li>
+                    <li><Link to="/about" className='btn' >About</Link></li>
                     </ul>
             </nav>
         )

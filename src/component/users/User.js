@@ -1,11 +1,14 @@
-import React from 'react'
-import { Spiner } from '../layout/spiner'
-// import { Spiner } from '../layout/spiner';
+import React, {useContext} from 'react'
+import { Spiner } from '../layout/spiner' 
 import UserItem from './userItem';
-import PropTypes from 'prop-types';
+import GithubContext from '../../context/github/githubContext';
 
-const Users = ( {users,loading} ) => {
-     
+const Users = () => {
+    
+    const githubContext = useContext(GithubContext)
+
+    const {users,loading} = githubContext;
+    
      if( loading ) {
         return <Spiner />
      } 
@@ -18,10 +21,5 @@ const Users = ( {users,loading} ) => {
             </div>
         )
     }
-
-Users.propTypes = {
-    loading: PropTypes.bool.isRequired , 
-    users: PropTypes.array.isRequired
-}
 
 export default Users
